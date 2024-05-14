@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="271.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-bJ-FuT">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="143"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="131.5"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="37j-Xj-fbU">
                                                         <rect key="frame" x="30" y="30" width="334" height="4"/>
@@ -39,13 +40,13 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="nUr-ZL-jCS">
-                                                <rect key="frame" x="0.0" y="143" width="394" height="128.5"/>
+                                                <rect key="frame" x="0.0" y="131.5" width="394" height="140"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xK4-Kt-Rn9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="197" height="128.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="197" height="140"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asx-3H-pWj">
-                                                                <rect key="frame" x="98.5" y="64" width="0.0" height="0.0"/>
+                                                                <rect key="frame" x="98.5" y="70" width="0.0" height="0.0"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -57,10 +58,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynp-Za-mOJ">
-                                                        <rect key="frame" x="197" y="0.0" width="197" height="128.5"/>
+                                                        <rect key="frame" x="197" y="0.0" width="197" height="140"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO!!!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TA8-1D-O3F">
-                                                                <rect key="frame" x="49" y="10" width="99" height="108.5"/>
+                                                                <rect key="frame" x="49" y="10" width="99" height="120"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -120,9 +121,10 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="136"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-p6-5k3">
-                                                                <rect key="frame" x="30" y="30" width="334" height="76"/>
+                                                                <rect key="frame" x="30" y="10" width="334" height="116"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="35"/>
+                                                                <color key="tintColor" name="AccentColor"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="START">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,9 +136,9 @@
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="HWc-p6-5k3" secondAttribute="trailing" constant="30" id="O1R-rp-9Of"/>
-                                                            <constraint firstItem="HWc-p6-5k3" firstAttribute="top" secondItem="EmI-A4-yCC" secondAttribute="top" constant="30" id="coX-RN-shu"/>
+                                                            <constraint firstItem="HWc-p6-5k3" firstAttribute="top" secondItem="EmI-A4-yCC" secondAttribute="top" constant="10" id="coX-RN-shu"/>
                                                             <constraint firstItem="HWc-p6-5k3" firstAttribute="leading" secondItem="EmI-A4-yCC" secondAttribute="leading" constant="30" id="o3r-DB-OMl"/>
-                                                            <constraint firstAttribute="bottom" secondItem="HWc-p6-5k3" secondAttribute="bottom" constant="30" id="rRq-Of-gYl"/>
+                                                            <constraint firstAttribute="bottom" secondItem="HWc-p6-5k3" secondAttribute="bottom" constant="10" id="rRq-Of-gYl"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -241,6 +243,9 @@
     </scenes>
     <resources>
         <image name="wallpaper" width="1125" height="2119"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
